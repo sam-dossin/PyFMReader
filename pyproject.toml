@@ -3,6 +3,24 @@ name = "pyfmreader"
 version = "0.1.3"
 description = "Python reader for JPK AFM files"
 requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    {name = "Javier Lopez Alonso"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "tifffile",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/jlopezalo/PyFMReader/issues"
+"repository" = "https://github.com/jlopezalo/PyFMReader"
 
 [build-system]
 requires = ["setuptools>=61.0"]
@@ -11,4 +29,3 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 namespaces = true
 where = ["src"]
-
